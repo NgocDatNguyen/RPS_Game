@@ -25,7 +25,7 @@ function win(userChoice, computerChoice) {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     const smallUserword = "user".fontsize(3).sub();
-    const smallCompword = "user".fontsize(3).sub();
+    const smallCompword = "computer".fontsize(3).sub();
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserword}  beat  ${convertToWord(computerChoice)}${smallCompword}. You win!`
     userChoice_div = document.getElementById(userChoice);
     userChoice_div.classList.add('green-glow');
@@ -39,7 +39,7 @@ function lose(userChoice, computerChoice) {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     const smallUserword = "user".fontsize(3).sub();
-    const smallCompword = "user".fontsize(3).sub();
+    const smallCompword = "computer".fontsize(3).sub();
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserword}  lose to  ${convertToWord(computerChoice)}${smallCompword}. You lost...`
     userChoice_div = document.getElementById(userChoice);
     userChoice_div.classList.add('red-glow');
@@ -50,7 +50,7 @@ function lose(userChoice, computerChoice) {
 
 function draw(userChoice, computerChoice) {
     const smallUserword = "user".fontsize(3).sub();
-    const smallCompword = "user".fontsize(3).sub();
+    const smallCompword = "computer".fontsize(3).sub();
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserword}  equals  ${convertToWord(computerChoice)}${smallCompword}. It's a draw.`
     userChoice_div = document.getElementById(userChoice);
     userChoice_div.classList.add('gray-glow');
